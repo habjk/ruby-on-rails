@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fname:</strong>
+  <%= @shop_admin.fname %>
+</p>
+
+<p>
+  <strong>Lname:</strong>
+  <%= @shop_admin.lname %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @shop_admin.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @shop_admin.password %>
+</p>
+
+<p>
+  <strong>Owns:</strong>
+  <%= @shop_admin.owns_id %>
+</p>
+
+<%= link_to 'Edit', edit_shop_admin_path(@shop_admin) %> |
+<%= link_to 'Back', shop_admins_path %>

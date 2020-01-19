@@ -1,0 +1,42 @@
+<%= form_with(model: shop_admin, local: true) do |form| %>
+  <% if shop_admin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(shop_admin.errors.count, "error") %> prohibited this shop_admin from being saved:</h2>
+
+      <ul>
+        <% shop_admin.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :fname %>
+    <%= form.text_field :fname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lname %>
+    <%= form.text_field :lname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.text_field :password %>
+  </div>
+
+  <div class="field">
+    <%= form.label :owns_id %>
+    <%= form.text_field :owns_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

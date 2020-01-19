@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  itemCatagory: MyString
+  picPath: MyString
+  videoPath: MyString
+  detail: MyText
+  price: 
+  shop: one
+
+two:
+  itemCatagory: MyString
+  picPath: MyString
+  videoPath: MyString
+  detail: MyText
+  price: 
+  shop: two
